@@ -1,5 +1,5 @@
 import { CreateNoteInput } from '@/generated';
-import noteModel from '../../model/Schema';
+import noteModel from '../../../model/Schema';
 
 export const createNote = async (_: CreateNoteInput, { input }: { input: CreateNoteInput }) => {
     const { title, completed } = input;

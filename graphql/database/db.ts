@@ -1,9 +1,8 @@
 import mongoose from 'mongoose';
 
-const url = "mongodb+srv://Moline:9588@cluster0.tgezrzd.mongodb.net/todo-list";
-
+const url = "mongodb+srv://Moline:9588@cluster0.tgezrzd.mongodb.net/WatchAura";
 const connect = async () => {
-    try {
+    try { 
         await mongoose.connect(url);
         console.log('Connected to MongoDB');
     } catch (error) {
