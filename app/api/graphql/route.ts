@@ -11,6 +11,7 @@ connect()
 const server = new ApolloServer({
     typeDefs: [OrderTypeDefs, NoteTypeDefs, WatchTypeDefs],
     resolvers,
+    introspection: true,
 });
 
 const handler = startServerAndCreateNextHandler<NextRequest>(server, {
